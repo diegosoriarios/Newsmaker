@@ -1,0 +1,10 @@
+{
+    "GOOD": [
+        {"name": "Teste", "text": "Teste de fala"},
+        {"name": "Teste", "text": "Outro Teste de fala"}
+    ],
+    "BAD": [
+        {"name": "Teste", "text": "Teste de fala ruim"},
+        {"name": "Teste", "text": "Outro Teste de fala ruim"}
+    ]
+}

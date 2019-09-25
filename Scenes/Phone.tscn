@@ -1,10 +1,20 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://images/phone.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/Phone.gd" type="Script" id=1]
+[ext_resource path="res://images/phone.png" type="Texture" id=2]
 
 [node name="Telephone" type="Node2D"]
+script = ExtResource( 1 )
 
 [node name="phone" type="Sprite" parent="."]
+editor/display_folded = true
 position = Vector2( 369, 228 )
 scale = Vector2( 0.226241, 0.231111 )
-texture = ExtResource( 1 )
+texture = ExtResource( 2 )
+
+[node name="Area2D" type="Area2D" parent="phone"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="phone/Area2D"]
+polygon = PoolVector2Array( -348.301, 787.5, 226.307, 826.443, 964.458, 774.52, 1074.96, 696.635, 1035.18, 263.943, 924.678, -99.5193, 906.998, -151.442, 1172.2, -95.1923, 1353.42, -129.808, 1415.3, -216.346, 1424.15, -372.116, 1349, -571.154, 1234.08, -692.308, 933.518, -796.154, 487.091, -874.039, -109.618, -865.385, -772.627, -679.327, -891.969, -471.635, -883.129, -233.654, -825.668, -77.8846, -662.126, -30.2885, -343.881, -207.692, -449.963, -12.9808, -476.483, 289.904, -511.844, 575.481, -511.844, 700.962 )
+[connection signal="mouse_entered" from="phone/Area2D" to="." method="_on_Area2D_mouse_entered"]
+[connection signal="mouse_exited" from="phone/Area2D" to="." method="_on_Area2D_mouse_exited"]
