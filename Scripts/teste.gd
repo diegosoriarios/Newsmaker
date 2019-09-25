@@ -7,6 +7,8 @@ var pos = Vector2(0,0)
 
 var point = rand_range(-2,5)
 
+var sprite_selected = preload("../icon.png")
+
 func _ready():
 	pos = Vector2($".".position.x, $".".position.y)
 	pass
@@ -20,6 +22,7 @@ func _process(delta):
 	
 	if(Input.is_action_just_released("click")):
 		isGrabbing = false
+
 	if isGrabbing:
 		set_position(get_viewport().get_mouse_position())
 	else:
