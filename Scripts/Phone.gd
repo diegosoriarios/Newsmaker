@@ -2,13 +2,17 @@ extends Node2D
 
 var entered = false
 
+var dialogue = preload("res://Scenes/Dialogue.tscn")
+
 func _process(delta):
 	if entered:
 		if Input.is_action_just_pressed("click"):
-			$".".get_parent().get_node("Dialogue").set_process(true)
-			$".".get_parent().get_node("Dialogue").show()
+			$".".get_parent().add_child(dialogue.instance())
+			#$".".get_parent().get_node("Dialogue").set_process(true)
+			#$".".get_parent().get_node("Dialogue").show()
 			global.dialog.append("Segundo teste")
 			global.dialog_page = 0
+			
 
 
 func _on_Area2D_mouse_exited():

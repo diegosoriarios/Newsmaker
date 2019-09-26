@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Dialogue.gd" type="Script" id=1]
+
+[node name="Dialogue" type="Polygon2D"]
+editor/display_folded = true
+self_modulate = Color( 0, 0, 0, 0.666667 )
+position = Vector2( 60, 480 )
+polygon = PoolVector2Array( 0, 0, 900, 0, 900, 100, 0, 100 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 106.0
+margin_top = 28.0
+margin_right = 783.0
+margin_bottom = 75.0
+bbcode_enabled = true
+bbcode_text = "Dialogue test"
+text = "Dialogue test"
+script = ExtResource( 1 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.05
+autostart = true
+[connection signal="timeout" from="Timer" to="RichTextLabel" method="_on_Timer_timeout"]

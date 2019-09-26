@@ -1,0 +1,80 @@
+{
+    "pro_governo": {
+        "politico": [
+            {"peso": 1, "text": "Felicidade dos habitantes vem aumentando"},
+            {"peso": 2, "text": "NOME_DO_PAIS aparece como top 1 em educação"},
+            {"peso": 3, "text": "Taxa de analfebetização quase nula em NOME_DO_PAIS"},
+            {"peso": 4, "text": "Presidente NOME_DO_PRESIDENTE promete mudanças nas leis para o trabalhador"},
+            {"peso": 5, "text": ""},
+            {"peso": 6, "text": ""},
+            {"peso": 7, "text": ""},
+            {"peso": 8, "text": ""},
+            {"peso": 9, "text": ""},
+            {"peso": 10, "text": ""}
+        ],
+        "midia": [
+            {"peso": 1, "text": "NOME_DO_PAIS ganha campeonato mundial de futebol"},
+            {"peso": 2, "text": ""},
+            {"peso": 3, "text": ""},
+            {"peso": 4, "text": ""},
+            {"peso": 5, "text": ""},
+            {"peso": 6, "text": ""},
+            {"peso": 7, "text": ""},
+            {"peso": 8, "text": ""},
+            {"peso": 9, "text": ""},
+            {"peso": 10, "text": ""}
+        ]
+    },
+    "contra_governo": {
+        "politico": [
+            {"peso": 1, "text": "Onda de suicidio em massa em NOME_DO_PAIS"},
+            {"peso": 2, "text": "NOME_DO_PAIS fechou mais 60% das escolas"},
+            {"peso": 3, "text": "Livros vem sendo confiscados em todo o território de NOME_DO_PAIS"},
+            {"peso": 4, "text": "Trabalhadores vão ter que começar a trabalhar 50% a mais ganhando 50% a menos"},
+            {"peso": 5, "text": ""},
+            {"peso": 6, "text": ""},
+            {"peso": 7, "text": ""},
+            {"peso": 8, "text": ""},
+            {"peso": 9, "text": ""},
+            {"peso": 10, "text": ""}
+        ],
+        "midia": [
+            {"peso": 1, "text": "NOME_DO_PAIS eliminado do campeonato mundial sem marcar nenhum gol"},
+            {"peso": 2, "text": ""},
+            {"peso": 3, "text": ""},
+            {"peso": 4, "text": ""},
+            {"peso": 5, "text": ""},
+            {"peso": 6, "text": ""},
+            {"peso": 7, "text": ""},
+            {"peso": 8, "text": ""},
+            {"peso": 9, "text": ""},
+            {"peso": 10, "text": ""}
+        ]
+    },
+    "neutro": {
+        "politico": [
+            {"peso": 1, "text": "NOME_DO_PAIS eliminado do campeonato mundial sem marcar nenhum gol"},
+            {"peso": 2},
+            {"peso": 3},
+            {"peso": 4},
+            {"peso": 5, "text": ""},
+            {"peso": 6, "text": ""},
+            {"peso": 7, "text": ""},
+            {"peso": 8, "text": ""},
+            {"peso": 9, "text": ""},
+            {"peso": 10, "text": ""}
+        ],
+        "midia": [
+            {"peso": 1, "text": "NOME_DO_PAIS eliminado do campeonato mundial sem marcar nenhum gol"},
+            {"peso": 2, "text": ""},
+            {"peso": 3, "text": ""},
+            {"peso": 4, "text": ""},
+            {"peso": 5, "text": ""},
+            {"peso": 6, "text": ""},
+            {"peso": 7, "text": ""},
+            {"peso": 8, "text": ""},
+            {"peso": 9, "text": ""},
+            {"peso": 10, "text": ""}
+        ]
+    }
+}
