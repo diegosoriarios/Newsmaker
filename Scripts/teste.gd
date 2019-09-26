@@ -24,7 +24,11 @@ func _process(delta):
 		isGrabbing = false
 
 	if isGrabbing:
-		set_position(get_viewport().get_mouse_position())
+		self.transform.x = Vector2(.5, 0)
+		self.transform.y = Vector2(0, .5)
+		self.position.x = get_global_mouse_position().x + 100 + (get_global_mouse_position().x / 7.5)
+		self.position.y = get_global_mouse_position().y - 50 + (get_global_mouse_position().y / 7.5)
+		#set_position(get_viewport().get_mouse_position())
 	else:
 		var areas = $Area2D.get_overlapping_areas()
 		
@@ -54,6 +58,8 @@ func _process(delta):
 				isGrabbing = false
 				return
 		set_position(pos)
+		self.transform.x = Vector2(2, 0)
+		self.transform.y = Vector2(0, .5)
 
 func _on_Area2D_mouse_entered():
 	mouseIn = true

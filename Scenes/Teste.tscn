@@ -11,13 +11,13 @@ extents = Vector2( 63.4519, 62.0148 )
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 65.0668, 63.0222 )
 
-[node name="Node2D" type="Node2D"]
+[node name="Computer" type="Node2D"]
 
 [node name="teste" type="Sprite" parent="."]
 editor/display_folded = true
 modulate = Color( 0.831373, 0.0784314, 0.0784314, 1 )
 position = Vector2( 345, 133.2 )
-scale = Vector2( 2, 0.5 )
+scale = Vector2( 2.00467, 0.5 )
 texture = ExtResource( 1 )
 script = ExtResource( 2 )
 __meta__ = {
