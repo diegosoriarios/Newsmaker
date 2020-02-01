@@ -9,3 +9,5 @@ var dialog = ["Hey my name is diego", 'teste pra ver o proximo']
 var dialog_page = 0
 
 var isNewGrabbed = false
+
+var spots = [null, null, null, null]

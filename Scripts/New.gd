@@ -35,8 +35,7 @@ func _process(delta):
 	else:
 		var areas = $ColisionArea.get_overlapping_areas()
 		
-		set_position(get_parent().position - offset)
-		self.position.x -= offset_x
+		returnToPosition()
 		
 		for area in areas:
 			print(area.name)
@@ -44,37 +43,46 @@ func _process(delta):
 				set_position(area.get_parent().position  - offset)
 				#resizeObject(size_x, size_y)
 				self.position.x -= 10
+				self.position.y -= 36 * index - (index * 1.2)
 				resizeObject(Vector2(.82, 0), Vector2(0, 2))
 				#Change to Sprite1
 				isGrabbing = false
 				global.isNewGrabbed = false
+				global.spots[0] = self
 				return
 			elif area.name == "PaperArea2":
 				set_position(area.get_parent().position  - offset)
 				self.position.x -= 8
+				self.position.y -= 36 * index - (index * 1.2)
 				resizeObject(Vector2(.4, 0), Vector2(0, 5))
 				#Change to Sprite1
 				isGrabbing = false
 				global.isNewGrabbed = false
+				global.spots[1] = self
 				return
 			elif area.name == "PaperArea3":
 				set_position(area.get_parent().position  - offset)
 				#resizeObject(area.get_child(0).transform.x, area.get_child(0).transform.y)
 				self.position.x -= 10
+				self.position.y -= 36 * index - (index * 1.2)
 				resizeObject(Vector2(.4, 0), Vector2(0, 2.7))
 				#Change to Sprite1
 				isGrabbing = false
 				global.isNewGrabbed = false
+				global.spots[2] = self
 				return
 			elif area.name == "PaperArea4":
 				set_position(area.get_parent().position  - offset)
 				#resizeObject(area.get_child(0).transform.x, area.get_child(0).transform.y)
 				self.position.x -= 10
+				self.position.y -= 36 * index - (index * 1.2)
 				resizeObject(Vector2(.4, 0), Vector2(0, 2.7))
 				#Change to Sprite1
 				isGrabbing = false
 				global.isNewGrabbed = false
+				global.spots[3] = self
 				return
+			
 
 func set_index(new_index):
 	index = new_index
@@ -91,3 +99,8 @@ func _on_New_mouse_entered():
 
 func _on_New_mouse_exited():
 	mouseIn = false
+
+func returnToPosition():
+	set_position(get_parent().position - offset)
+	self.position.x -= offset_x
+	resizeObject(Vector2(1, 0), Vector2(0, 1))
