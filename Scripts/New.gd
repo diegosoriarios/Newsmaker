@@ -32,6 +32,12 @@ func _process(delta):
 		self.position -= offset	
 		self.position.y -= (32 * index) + (index * 2)
 		resizeObject(Vector2(.25,0), Vector2(0,.5))
+		
+		var areas = get_overlapping_areas()
+		
+		for area in areas:
+			if area.name == "New" and area != self:
+				area.returnToPosition()
 	else:
 		var areas = $ColisionArea.get_overlapping_areas()
 		
@@ -82,7 +88,6 @@ func _process(delta):
 				global.isNewGrabbed = false
 				global.spots[3] = self
 				return
-			
 
 func set_index(new_index):
 	index = new_index
