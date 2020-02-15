@@ -22,5 +22,31 @@ texture = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ColisionArea"]
 shape = SubResource( 2 )
+
+[node name="icon" type="Sprite" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( -86.121, 0.060955 )
+scale = Vector2( 0.414427, 0.342612 )
+texture = ExtResource( 2 )
+
+[node name="Control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="RichTextLabel" parent="Control"]
+margin_left = -43.0
+margin_top = -18.0
+margin_right = 111.0
+margin_bottom = 18.0
+mouse_filter = 2
+text = "hfalkjflakjsflakjsflkajsflakjsflakjsflaksjflkajsflalas"
+scroll_active = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="mouse_entered" from="." to="." method="_on_New_mouse_entered"]
 [connection signal="mouse_exited" from="." to="." method="_on_New_mouse_exited"]

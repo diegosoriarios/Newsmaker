@@ -1,0 +1,74 @@
+{
+  "1": {
+	"id": 1,
+	"text": "Primeiro",
+	"target": {
+		"name": "",
+		"points": 0
+	},
+	"image": ""
+  },
+  "2": {
+	"id": 1,
+	"text": "Segundo",
+	"target": {
+		"name": "",
+		"points": 0
+	},
+	"image": ""
+  },
+  "3": {
+	"id": 1,
+	"text": "Terceiro",
+	"target": {
+		"name": "",
+		"points": 0
+	},
+	"image": ""
+  },
+  "4": {
+	"id": 1,
+	"text": "Quarto",
+	"target": {
+		"name": "",
+		"points": 0
+	},
+	"image": ""
+  },
+  "5": {
+	"id": 1,
+	"text": "Quinto",
+	"target": {
+		"name": "",
+		"points": 0
+	},
+	"image": ""
+  },
+  "6": {
+	"id": 1,
+	"text": "Seis",
+	"target": {
+		"name": "",
+		"points": 0
+	},
+	"image": ""
+  },
+  "7": {
+	"id": 1,
+	"text": "Sete",
+	"target": {
+		"name": "",
+		"points": 0
+	},
+	"image": ""
+  },
+  "8": {
+	"id": 1,
+	"text": "Oito",
+	"target": {
+		"name": "",
+		"points": 0
+	},
+	"image": ""
+  }
+}

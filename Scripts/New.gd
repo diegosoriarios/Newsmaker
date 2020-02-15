@@ -5,7 +5,7 @@ var isGrabbing = false
 
 var sprite_selected = preload("res://icon.png")
 
-var index setget set_index
+var index setget set_index, get_index
 
 onready var offset = $Sprite.texture.get_size() * 1.2 
 onready var offset_x = $Sprite.texture.get_width() * .5 
@@ -38,7 +38,7 @@ func _process(delta):
 		returnToPosition()
 		
 		for area in areas:
-			print(area.name)
+			#print(area.name)
 			if area.name == 'PaperArea':# or area.name == 'PaperArea2' or area.name == 'PaperArea3' or area.name == 'PaperArea4':
 				set_position(area.get_parent().position  - offset)
 				#resizeObject(size_x, size_y)
@@ -86,6 +86,9 @@ func _process(delta):
 
 func set_index(new_index):
 	index = new_index
+
+func get_index():
+	return index
 
 func resizeObject(sX, sY):
 	self.position.x -= offset_x
