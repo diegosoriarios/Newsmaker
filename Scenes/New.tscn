@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Scripts/New.gd" type="Script" id=1]
 [ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://images/news_background.png" type="Texture" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 122.51, 28.9192 )
@@ -16,7 +17,7 @@ shape = SubResource( 1 )
 
 [node name="Sprite" type="Sprite" parent="."]
 scale = Vector2( 2, 0.5 )
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 
 [node name="ColisionArea" type="Area2D" parent="."]
 
@@ -43,6 +44,7 @@ margin_top = -18.0
 margin_right = 111.0
 margin_bottom = 18.0
 mouse_filter = 2
+custom_colors/default_color = Color( 0, 0, 0, 1 )
 text = "hfalkjflakjsflakjsflkajsflakjsflakjsflaksjflkajsflalas"
 scroll_active = false
 __meta__ = {

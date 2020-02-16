@@ -12,3 +12,4 @@ var dialog_page = 0
 var isNewGrabbed = false
 
 var spots = [null, null, null, null]
+var goNext = false

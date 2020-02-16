@@ -1,19 +1,19 @@
 {
   "1": {
 	"id": 1,
-	"text": "Primeiro",
+	"text": "Economia no NOME_PAIS vem crescendo cada vez mais",
 	"target": {
-		"name": "",
-		"points": 0
+		"name": "governo",
+		"points": 1
 	},
 	"image": ""
   },
   "2": {
 	"id": 1,
-	"text": "Segundo",
+	"text": "Governo de NOME_PAIS gastou 60% a mais do valor nacional",
 	"target": {
-		"name": "",
-		"points": 0
+		"name": "rebelde",
+		"points": 1
 	},
 	"image": ""
   },
