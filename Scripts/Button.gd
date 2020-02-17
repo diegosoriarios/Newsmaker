@@ -17,12 +17,9 @@ func _ready():
 
 
 func _on_Button_pressed():
+	
 	if global.goNext:
 		print("go")
 		get_tree().change_scene("res://Scenes/Casa.tscn")
 	else:
 		print("not yet")
-	#print(global.spots[0])
-	#print(global.spots[1])
-	#print(global.spots[2])
-	#print(global.spots[3])

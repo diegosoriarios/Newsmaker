@@ -14,9 +14,13 @@ func generateNews(item):
 	var json_result = JSON.parse(json).result
 	file.close()
 	#print(json_result[str(index)].target.points)
-	item.get_node("Control/Label").set_text(json_result[str(positions[index])].text)
+	item.get_node("default/Control/Label").set_text(json_result[str(positions[index])].text)
+	item.get_node("area1/Label").set_text(json_result[str(positions[index])].text)
+	item.get_node("area2/Label").set_text(json_result[str(positions[index])].text)
+	item.get_node("area3/Label").set_text(json_result[str(positions[index])].text)
+	item.get_node("area4/Label").set_text(json_result[str(positions[index])].text)
 	var texture = preload("res://icon.png")
-	item.get_node("icon").set_texture(texture)
+	item.get_node("default/icon").set_texture(texture)
 	item.set_target(json_result[str(positions[index])].target.name)
 	item.set_points(json_result[str(positions[index])].target.points)
 	index += 1

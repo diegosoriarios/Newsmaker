@@ -21,4 +21,110 @@ text = "Next"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="Control" type="Control" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 339.001
+margin_top = 139.0
+margin_right = 948.001
+margin_bottom = 483.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="Control"]
+margin_left = -0.5
+margin_top = -0.5
+margin_right = 39.5
+margin_bottom = 149.5
+rect_min_size = Vector2( 40, 40 )
+custom_constants/vseparation = 50
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Comida" type="Control" parent="Control/GridContainer"]
+
+[node name="CheckBox" type="CheckBox" parent="Control/GridContainer/Comida"]
+margin_left = -35.0001
+margin_top = -7.00002
+margin_right = 19.9999
+margin_bottom = 17.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Control/GridContainer/Comida"]
+margin_right = 48.0
+margin_bottom = 14.0
+text = "Comida"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Eletricidade" type="Control" parent="Control/GridContainer"]
+margin_top = 50.0
+margin_bottom = 50.0
+
+[node name="CheckBox" type="CheckBox" parent="Control/GridContainer/Eletricidade"]
+margin_left = -35.0001
+margin_top = -7.00002
+margin_right = 19.9999
+margin_bottom = 17.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Control/GridContainer/Eletricidade"]
+margin_right = 48.0
+margin_bottom = 14.0
+text = "Eletricidade"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Gasolina" type="Control" parent="Control/GridContainer"]
+margin_top = 100.0
+margin_bottom = 100.0
+
+[node name="CheckBox" type="CheckBox" parent="Control/GridContainer/Gasolina"]
+margin_left = -35.0001
+margin_top = -7.00002
+margin_right = 19.9999
+margin_bottom = 17.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Control/GridContainer/Gasolina"]
+margin_right = 48.0
+margin_bottom = 14.0
+text = "Gasolina"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Aluguel" type="Control" parent="Control/GridContainer"]
+margin_top = 150.0
+margin_bottom = 150.0
+
+[node name="CheckBox" type="CheckBox" parent="Control/GridContainer/Aluguel"]
+margin_left = -35.0001
+margin_top = -7.00002
+margin_right = 19.9999
+margin_bottom = 17.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Control/GridContainer/Aluguel"]
+margin_right = 48.0
+margin_bottom = 14.0
+text = "Aluguel"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]

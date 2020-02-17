@@ -1,25 +1,19 @@
-extends Node2D
+extends Area2D
 
-var entered = false
+var dialog
 
-var dialogue = preload("res://Scenes/Dialogue.tscn")
+func _ready():
+	randomize()
+	dialog = get_tree().get_root().get_child(1).get_child(6)
 
-func _process(delta):
-	if entered:
-		if Input.is_action_just_pressed("click"):
-			$".".get_parent().add_child(dialogue.instance())
-			#$".".get_parent().get_node("Dialogue").set_process(true)
-			#$".".get_parent().get_node("Dialogue").show()
-			global.dialog.append("Segundo teste")
-			global.dialog_page = 0
-			
+func _process(_delta):
+	if global.time > rand_range(30, 70):
+		global.isRinging = true
 
-
-func _on_Area2D_mouse_exited():
-	entered = false
-	pass # Replace with function body.
-
-
-func _on_Area2D_mouse_entered():
-	entered = true
-	pass # Replace with function body.
+func _input_event(_viewport, event, _shape_idx):
+	if event.is_pressed() and global.isRinging:
+		print(dialog)
+		dialog.visible = true
+		global.isRinging = false
+	#if event.type == InputEvent.MOUSE_BUTTON and event.button_index == BUTTON_LEFT and event.pressed:
+	#	print("Clicked")
